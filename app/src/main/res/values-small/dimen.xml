@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="genderImageWidth">50dp</dimen>
+    <dimen name="genderImageHeight">50dp</dimen>
+    <dimen name="buttonIncrementAndDecrementWidth">20dp</dimen>
+    <dimen name="buttonIncrementAndDecrementHeight">20dp</dimen>
+    <dimen name="detailsTextSize">17sp</dimen>
+    <dimen name="calculateTextSize">30sp</dimen>
+    <dimen name="calculateButtonMargin"> 3dp</dimen>
+    <dimen name="ButtonContainerWidth">100dp</dimen>
+    <dimen name="margin">3</dimen>
+    <dimen name="unitsTextSize">5sp</dimen>
+    <dimen name="linearLayout_result_padding">15dp</dimen>
+    <dimen name="headersTextsSize">20sp</dimen>
+    <!-- Result Activity dimens items-->
+    <dimen name="titleTextSize">20sp</dimen>
+    <dimen name="titleMargin">2dp</dimen>
+    <dimen name="result_coerners">5dp</dimen>
+    <dimen name="bmiResult">20sp</dimen>
+    <dimen name="resultsTextSize">10sp</dimen>
+
+    <!-- Splash screen -->
+    <dimen name="logowidth">100dp</dimen>
+    <dimen name="logoTextSize">35sp</dimen>
+</resources>

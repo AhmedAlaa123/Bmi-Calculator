@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Bmi Calculator</string>
+    <string name="result_bmi">Normal</string>
+    <string name="bmi_value">18.9</string>
+    <string name="gender">Male</string>
+    <string name="age">20</string>
+    <string name="age_unit">year</string>
+    <string name="height">160</string>
+    <string name="height_unit">cm</string>
+
+    <string name="weight">100</string>
+    <string name="weight_unit">kg</string>
+
+    <string name="message">you have normal weight good jop</string>
+</resources>

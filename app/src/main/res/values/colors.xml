@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#750633</color>
+    <color name="colorPrimaryDark">#4E0404</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="itemsColor">#213ED1</color>
+    <color name="genderSelectedColor">#F30462</color>
+    <color name="calculateButtonPressed">#e6005c</color>
+    <color name="calculateButtonUnPressed">#f0f</color>
+    <color name="resultMessage">#64A5195F</color>
+</resources>

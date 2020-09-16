@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layout_male"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@drawable/item_design"
+            android:gravity="center|clip_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/genderImageWidth"
+                android:layout_height="@dimen/genderImageHeight"
+                android:scaleType="centerCrop"
+                android:src="@drawable/male" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MALE"
+                android:textColor="#fff"
+                android:textSize="@dimen/headersTextsSize"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_female"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@drawable/item_design"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/genderImageWidth"
+                android:layout_height="@dimen/genderImageHeight"
+                android:scaleType="centerCrop"
+                android:src="@drawable/femal_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="FEMALE"
+                android:textColor="#fff"
+                android:textSize="@dimen/headersTextsSize"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+
+        android:layout_weight="1"
+        android:background="@drawable/item_design"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEIGHT"
+            android:textColor="#fff"
+            android:textSize="@dimen/headersTextsSize"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#fff"
+                android:textSize="@dimen/headersTextsSize"
+
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cm"
+                android:textColor="#fff"
+                android:textSize="@dimen/unitsTextSize" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:max="250"
+            android:progress="1"
+            android:progressBackgroundTint="#6E4949"
+            android:progressBackgroundTintMode="screen"
+            android:scrollbarSize="20dp"
+            android:thumbTintMode="src_over"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/item_design"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WEIGHT"
+                android:textColor="#fff"
+                android:textSize="@dimen/headersTextsSize"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_view_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/headersTextsSize"
+
+
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kg"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/unitsTextSize" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/ButtonContainerWidth"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/btn_increase_weight"
+                    android:layout_width="@dimen/buttonIncrementAndDecrementWidth"
+                    android:layout_height="@dimen/buttonIncrementAndDecrementHeight"
+                    android:layout_alignParentStart="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/add_circle" />
+
+                <ImageView
+                    android:id="@+id/btn_decrease_weight"
+                    android:layout_width="@dimen/buttonIncrementAndDecrementWidth"
+                    android:layout_height="@dimen/buttonIncrementAndDecrementHeight"
+                    android:layout_alignParentEnd="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/minus_circle" />
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/titleMargin"
+            android:layout_weight="1"
+            android:background="@drawable/item_design"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AGE"
+                android:textColor="#fff"
+                android:textSize="@dimen/headersTextsSize"
+
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_view_Age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/headersTextsSize"
+
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/unitsTextSize" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/ButtonContainerWidth"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/btn_increase_age"
+                    android:layout_width="@dimen/buttonIncrementAndDecrementWidth"
+                    android:layout_height="@dimen/buttonIncrementAndDecrementHeight"
+                    android:layout_alignParentStart="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/add_circle" />
+
+                <ImageView
+                    android:id="@+id/btn_decrease_age"
+                    android:layout_width="@dimen/buttonIncrementAndDecrementWidth"
+                    android:layout_height="@dimen/buttonIncrementAndDecrementHeight"
+                    android:layout_alignParentEnd="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/minus_circle" />
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/calculateButtonMargin"
+        android:layout_weight="1"
+
+
+        android:background="@drawable/calculate_and_recalculate_desgin"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALCULATE"
+            android:textColor="#FFF"
+            android:textSize="@dimen/calculateTextSize"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
